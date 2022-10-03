@@ -1,0 +1,29 @@
+{
+  "name": "desafio5-motores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautarxtomas/Desafio5-motores.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lautarxtomas/Desafio5-motores/issues"
+  },
+  "homepage": "https://github.com/lautarxtomas/Desafio5-motores#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "multer": "^1.4.5-lts.1",
+    "pug": "^3.0.2"
+  }
+}
