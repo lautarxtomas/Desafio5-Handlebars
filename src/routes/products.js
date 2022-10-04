@@ -2,12 +2,21 @@ const { Router } = require('express') // si exportamos el router va el require, 
 const routerProducts = Router() // 1° --> declaro router
 const apiContainer = require ('../containers/apiContainer') 
 
+// const express = require('express')
+// const app = express()
+
+// const { engine } = require('express-handlebars')
+
+// app.engine('handlebars', engine())
+// app.set('view engine', 'handlebars')
+// app.set('views', '../../views/layouts')
 
 const products = []
 let api = new apiContainer(products)
 
 routerProducts.get('/', (req, res) => {
-    res.send({productos: products});
+    // res.send({productos: products});
+    res.render('products', { products })
 })
 
 routerProducts.post('/', (req, res) => {
